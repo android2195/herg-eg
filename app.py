@@ -1,4 +1,5 @@
 #load requisite libraries
+
 import matplotlib.pylab as plt
 import numpy as np
 import pandas as pd
@@ -25,6 +26,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
 import os
 
+from intro_to_flask import app
+port = int(os.environ.get("PORT",5000))
+app.run(debug=True, host='0.0.0.0',port=port)
 #stuff for plotting trees
 from six import StringIO
 #from sklearn.externals.six import StringIO from IPython.display import Image
