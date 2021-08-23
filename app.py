@@ -176,6 +176,6 @@ def main():
         st.subheader("hERG Data Set")
         st.write(df)
         st.markdown("This dataset of approximately 200 hERG variants are collected from the literature.")
-    st.sidebar.markdown('<a href="mailto:ikalyanc@gmail.com">Created by Kalyan Immadisetty</a>')  
+    st.markdown('<a href="mailto:ikalyanc@gmail.com">Created by Kalyan Immadisetty</a>',unsafe_allow_html=True)  
 if __name__ == '__main__':
     main()
